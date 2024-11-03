@@ -33,11 +33,11 @@ public class SortPanel extends JPanel {
 
             for (int i = 0; i < array.length; i++) {
                 int barHeight = array[i] * height / getMax();
-                // Apply gradient color
+            
                 if (i == currentIndex) {
-                    g.setColor(Color.RED); // Highlight the current index
+                    g.setColor(Color.RED); 
                 } else if (i == compareIndex) {
-                    g.setColor(Color.BLUE); // Highlight the compared index
+                    g.setColor(Color.BLUE); 
                 } else {
                     g.setColor(new Color(0, (int) ((1.0 * array[i] / getMax()) * 255), 0));
                 }
